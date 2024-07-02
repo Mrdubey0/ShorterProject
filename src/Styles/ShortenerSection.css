@@ -1,0 +1,112 @@
+.shortener-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    background: linear-gradient(135deg, #1b1b1b, #282828); /* Gradient background */
+    height: 100vh;
+  }
+  
+  .shortener-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  }
+  
+  .shortener-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .shortener-form {
+    display: flex;
+    align-items: center;
+    background-color: #282828;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .shortener-input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 1rem;
+    font-size: 1rem;
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .shortener-button {
+    background-color: #8457f8;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .shortener-button:hover {
+    background-color: #a279fc;
+  }
+  
+  .shortener-note {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .features {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .feature-item {
+    background-color: #282828;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  /* Add this media query for smaller screens */
+@media (max-width: 768px) {
+  .shortener-section {
+    padding: 1rem;
+  }
+
+  .shortener-title {
+    font-size: 2rem;
+  }
+
+  .shortener-subtitle {
+    font-size: 1rem;
+  }
+
+  .shortener-form {
+    flex-direction: column;
+    align-items: stretch;
+ 
+  }
+
+  .shortener-input {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .shortener-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
